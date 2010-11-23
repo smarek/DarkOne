@@ -1,12 +1,9 @@
 /**
- * DarkOne Theme by Marek Sebera
- * extended Minimal Theme by Fahad Ibnay Heylaal
- * @author Fahad Ibnay Heylaal <contact@fahad19.com>
- * @author Marek Sebera <marek@msebera.cz>
- * @link   http://fahad19.com
- * @link   http://msebera.cz
- */
-body { text-align: center; background-image: url('/theme/darkone/img/pattern.jpg'); font-family: Arial, sans-serif; font-size: 12px; font-variant: normal; font-weight: normal; line-height: 1.5em; color: #FEFEFE; background-color: black;}
+ * DarkOne theme for Croogo
+ * extended Fahad Heylaal Minimal theme
+ * Link: http://www.msebera.cz
+*/
+body { text-align: center; background-image: url('/theme/darkone/img/pattern.jpg'); font-family: Arial, sans-serif; font-size: 12px; font-variant: normal; font-weight: normal; line-height: 1.5em; color: #FEFEFE; background-color: #66DD00;}
 
 #wrapper {
     background-color: black;
@@ -101,20 +98,20 @@ form input[type=submit]:active { border: 1px solid #ccc; }
  * Comments
 */
 .comments h3 { font-family: Georgia; font-size: 28px; font-weight: normal; line-height: 20px; margin: 15px 0px 25px 0px; }
-.comments .comment { margin-bottom: 20px; padding: 10px; border: 1px solid #eee; background: #fff; }
+.comments .comment { margin-bottom: 20px; padding: 10px; border: 1px solid #eee; background: #010; }
 .comments .comment .comment { margin-left: 45px; margin-bottom: 0px; }
 .comments .comment .comment + .comment { margin-top: 10px; }
-.comments .comment-info { background: #fafafa; }
+.comments .comment-info { background: #555; }
 .comments .comment-info .avatar { float: left; margin-right: 10px; }
-.comments .comment-info .avatar img { border: 2px solid #333; }
+.comments .comment-info .avatar img { border: 2px solid #888; }
 .comments .comment-info .name { display: block; font-weight: bold; }
 .comments .comment-info .date { font-size: 10px; color: #999; }
 .comments .comment-body { margin: 10px 0px 0px 0px; }
 .comments .comment-reply { padding: 10px 0px 10px 0px; }
 .comments .comment-reply a { background: #464646; color: #fff; font-weight: normal; padding: 5px; }
-.comments .comment-reply a:hover { background: #eee; color: #464646; }
-.comments .author { border: 1px solid #a9a9a9; background: #fafafa; }
-.comments .author > .comment-info { background: #efefef; }
+.comments .comment-reply a:hover { background: #555; color: #464646; }
+.comments .author { border: 1px solid #a9a9a9; background: #010; }
+.comments .author > .comment-info { background: #555; }
 
 .comment-form h3 { font-family: Georgia; font-size: 28px; font-weight: normal; line-height: 20px; margin: 30px 0px 30px 0px; }
 
