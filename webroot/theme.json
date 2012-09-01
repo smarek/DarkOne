@@ -1,0 +1,17 @@
+{
+  "name" : "DarkOne",
+  "description" : "DarkOne for Croogo, it is extended Minimal theme from Fahad Ibnay Heylaal",
+  "screenshot" : "screenshot.png",
+
+  "author" : " Marek Sebera & Fahad Ibnay Heylaal",
+  "authorEmail" : "marek@msebera.cz",
+  "authorUrl" : "http://www.msebera.cz",
+
+  "menus" : [
+    "main"
+    ],
+
+  "regions" : [
+    "right"
+    ]
+}
