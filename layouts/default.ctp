@@ -17,15 +17,16 @@
         <meta name="author" content="Marek Sebera &amp; Fahad Ibnay Heylaal" />
         <title><?php echo $title_for_layout; ?> &raquo; <?php echo Configure::read('Site.title'); ?></title>
         <?php
-        echo $layout->meta();
-        echo $layout->feed();
-        echo $html->script(array('jquery/jquery.min'));
-        echo $layout->js();
-        echo $html->css(array(
+        echo $this->Meta->meta();
+        echo $this->Layout->feed();
+        echo $this->Html->script(array('jquery/jquery.min'));
+        echo $this->Html->css(array(
             'reset',
             '960',
             'theme',
         ));
+        echo $this->Blocks->get('css');
+	echo $this->Blocks->get('script');
         echo $scripts_for_layout;
         ?>
     </head>
@@ -34,7 +35,7 @@
         <div id="wrapper">
             <div id="header" class="container_16">
                 <div id="logo" class="grid_16">
-                    <h1><?php echo $html->link(Configure::read('Site.title'), "/"); ?></h1>
+                    <h1><?php echo $this->Html->link(Configure::read('Site.title'), "/"); ?></h1>
                 </div>
 
                 <div id="tagline" class="grid_16">
@@ -50,7 +51,7 @@
                 </div>
 
                 <div id="sidebar" class="grid_5">
-                    <?php echo $layout->blocks('right'); ?>
+                    <?php echo $this->Layout->blocks('right'); ?>
                 </div>
 
                 <div class="clear"></div>
@@ -58,11 +59,11 @@
 
             <div id="footer" class="container_16">
                 <div class="left grid_8">
-                    Powered by <?php echo $html->link('Croogo', 'http://croogo.org'); ?> with <?php echo $html->link('DarkOne', 'http://www.msebera.cz'); ?> Theme.
+                    Powered by <?php echo $this->Html->link('Croogo', 'http://croogo.org'); ?> with <?php echo $this->Html->link('DarkOne', 'http://www.msebera.cz'); ?> Theme.
                 </div>
 
                 <div class="right grid_8">
-                    <a href="http://www.cakephp.org"><?php echo $html->image('/img/cake.power.gif'); ?></a>
+                    <a href="http://www.cakephp.org"><?php echo $this->Html->image('/img/cake.power.gif'); ?></a>
                 </div>
 
                 <div class="clear"></div>
